@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Firebase Line Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <!-- Date pickers -->
+  <div class="date-picker-container">
+    <div>
+      <label for="dateRelay1">Select day for Relay 1:</label>
+      <input type="date" id="dateRelay1">
+    </div>
+    <div>
+      <label for="dateRelay2">Select day for Relay 2:</label>
+      <input type="date" id="dateRelay2">
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="chart-container">
+    <div class="chart-box">
+      <canvas id="currentChart1"></canvas>
+    </div>
+    <div class="chart-box">
+      <canvas id="currentChart2"></canvas>
+    </div>
+  </div>
+
+  <!-- Relay toggle switches -->
+  <div class="relay-container">
+    <div>
+      <h1>Relay 1 Status:</h1>
+      <label class="switch">
+        <input type="checkbox" id="relayToggle1">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div>
+      <h1>Relay 2 Status:</h1>
+      <label class="switch">
+        <input type="checkbox" id="relayToggle2">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script type="module" src="line_chart.js"></script>
+
+</body>
+</html>
